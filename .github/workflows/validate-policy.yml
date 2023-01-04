@@ -23,4 +23,4 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-          az network net create --location ${{ env.AZURE_REGION }} --name failvnet --resource-group ${{ env.RESOURCE_GROUP_NAME }}
+          az network vnet create --location ${{ env.AZURE_REGION }} --name failvnet --resource-group ${{ env.RESOURCE_GROUP_NAME }}
